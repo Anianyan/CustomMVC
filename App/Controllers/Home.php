@@ -18,11 +18,13 @@ class Home extends \Core\Controller {
 
 
 	public function indexAction() {
-		View::render(
-			'Home/index.php',
+		/**
+		 * Load template via Twig :)
+		 */
+		View::renderTemplateWithTwig(
+			'Home/index.html',
 			[
-				'name'   => 'Dave',
-				'colors' => [ 'red', 'yellow', 'black' ],
+				'name' => 'Dave',
 			]
 		);
 	}

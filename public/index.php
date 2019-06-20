@@ -8,8 +8,8 @@
 /**
  * Twig
  */
-require_once dirname( __DIR__ ) . '/vendor/twig/lib/Twig/Autoloader.php';
-Twig_Autoloader::register();
+require_once dirname( __DIR__ ) . '/vendor/autoload.php';
+
 // require '../Core/Router.php';
 /**
  * Autoload
