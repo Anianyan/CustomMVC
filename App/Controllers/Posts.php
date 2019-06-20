@@ -11,7 +11,12 @@ class Posts extends \Core\Controller {
 	public function indexAction() {
 
 		$posts = Post::getAll();
-		View::render( 'Posts/index.php', $posts );
+		View::renderTemplateWithTwig(
+			'Posts/index.html',
+			[
+				'posts' => $posts,
+			]
+		);
 	}
 
 	public function addNewAction() {
@@ -19,6 +24,5 @@ class Posts extends \Core\Controller {
 	}
 
 	public function editAction() {
-		var_dump( $this->route_params );
 	}
 }

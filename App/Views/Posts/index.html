@@ -1,9 +1,15 @@
 {% extends "base.html" %}
 
-{% block title %}Home{% endlock %}
+{% block title %}Posts{% endblock %}
 
 {% block body %}
 
 <h1>Posts</h1>
+<ul>
+    {% for post in posts %}
+    <h2> {{ post.title }} </h2>
+    <p>{{ post.cintent }}</p>
+    {% endfor %}
+</ul>
 
 {% endblock %}
