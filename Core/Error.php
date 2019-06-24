@@ -34,6 +34,13 @@ class Error {
 	 */
 	public static function exceptionHandler( $exception ) {
 
+		/** Get exception code */
+		$code = $exception->getCode();
+		if( $code !== 404 ) {
+			$code = 500;
+		}
+		\http_response_code( $code );
+
 		/** Check if define show errors true */
 		if ( Config::SHOW_ERRORS ) {
 			echo '<h1>Fatal error</h1>';
@@ -52,7 +59,9 @@ class Error {
 			$msg .= "\nThrow in '" . $exception->getFile() . "' on line " . $exception->getLine();
 
 			error_log( $msg );
-			echo "<h1>An Error accord</h1>";
+
+			/** Get error handler */
+			View::renderTemplateWithTwig( "$code.html" );
 		}
 
 	}

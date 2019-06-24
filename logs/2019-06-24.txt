@@ -1,0 +1,49 @@
+[24-Jun-2019 11:23:09 Europe/Moscow] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\LocalSites\domains\CustomMVC\public\index.php(48): Core\Router->dispatch('\xD5\xBF\xD5\xA8\xD5\xAB\xD6\x82\xD5\xBC\xD5\xBF\xD5\xA8')
+#1 {main}
+Throw in 'C:\LocalSites\domains\CustomMVC\Core\Router.php' on line 89
+[24-Jun-2019 11:27:53 Europe/Moscow] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\LocalSites\domains\CustomMVC\public\index.php(48): Core\Router->dispatch('\xD5\xBF\xD5\xA8\xD5\xAB\xD6\x82\xD5\xBC\xD5\xBF\xD5\xA8')
+#1 {main}
+Throw in 'C:\LocalSites\domains\CustomMVC\Core\Router.php' on line 89
+[24-Jun-2019 11:54:06 Europe/Moscow] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\LocalSites\domains\CustomMVC\public\index.php(48): Core\Router->dispatch('qwerty')
+#1 {main}
+Throw in 'C:\LocalSites\domains\CustomMVC\Core\Router.php' on line 89
+[24-Jun-2019 11:55:10 Europe/Moscow] Uncaught exception: 'Twig\Error\LoaderError' with message 'Unable to find template "Posts/inde.html" (looked into: ../App/Views).'
+Stack trace: #0 C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Loader\FilesystemLoader.php(150): Twig\Loader\FilesystemLoader->findTemplate('Posts/inde.html')
+#1 C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Environment.php(299): Twig\Loader\FilesystemLoader->getCacheKey('Posts/inde.html')
+#2 C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Environment.php(381): Twig\Environment->getTemplateClass('Posts/inde.html')
+#3 C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Environment.php(359): Twig\Environment->loadTemplate('Posts/inde.html')
+#4 C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Environment.php(318): Twig\Environment->load('Posts/inde.html')
+#5 C:\LocalSites\domains\CustomMVC\Core\View.php(31): Twig\Environment->render('Posts/inde.html', Array)
+#6 C:\LocalSites\domains\CustomMVC\App\Controllers\Posts.php(17): Core\View::renderTemplateWithTwig('Posts/inde.html', Array)
+#7 [internal function]: App\Controllers\Posts->indexAction()
+#8 C:\LocalSites\domains\CustomMVC\Core\Controller.php(21): call_user_func_array(Array, Array)
+#9 C:\LocalSites\domains\CustomMVC\Core\Router.php(81): Core\Controller->__call('index', Array)
+#10 C:\LocalSites\domains\CustomMVC\public\index.php(48): Core\Router->dispatch('posts/index')
+#11 {main}
+Throw in 'C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Loader\FilesystemLoader.php' on line 250
+[24-Jun-2019 11:55:10 Europe/Moscow] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "505.html" (looked into: ../App/Views). in C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Loader\FilesystemLoader.php:250
+Stack trace:
+#0 C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Loader\FilesystemLoader.php(150): Twig\Loader\FilesystemLoader->findTemplate('505.html')
+#1 C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Environment.php(299): Twig\Loader\FilesystemLoader->getCacheKey('505.html')
+#2 C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Environment.php(381): Twig\Environment->getTemplateClass('505.html')
+#3 C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Environment.php(359): Twig\Environment->loadTemplate('505.html')
+#4 C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Environment.php(318): Twig\Environment->load('505.html')
+#5 C:\LocalSites\domains\CustomMVC\Core\View.php(31): Twig\Environment->render('505.html', Array)
+#6 C:\LocalSites\domains\CustomMVC\Core\Error.php(64): Core\View::renderTemplateWithTwig('50 in C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 250
+[24-Jun-2019 11:55:41 Europe/Moscow] Uncaught exception: 'Twig\Error\LoaderError' with message 'Unable to find template "Posts/inde.html" (looked into: ../App/Views).'
+Stack trace: #0 C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Loader\FilesystemLoader.php(150): Twig\Loader\FilesystemLoader->findTemplate('Posts/inde.html')
+#1 C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Environment.php(299): Twig\Loader\FilesystemLoader->getCacheKey('Posts/inde.html')
+#2 C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Environment.php(381): Twig\Environment->getTemplateClass('Posts/inde.html')
+#3 C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Environment.php(359): Twig\Environment->loadTemplate('Posts/inde.html')
+#4 C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Environment.php(318): Twig\Environment->load('Posts/inde.html')
+#5 C:\LocalSites\domains\CustomMVC\Core\View.php(31): Twig\Environment->render('Posts/inde.html', Array)
+#6 C:\LocalSites\domains\CustomMVC\App\Controllers\Posts.php(17): Core\View::renderTemplateWithTwig('Posts/inde.html', Array)
+#7 [internal function]: App\Controllers\Posts->indexAction()
+#8 C:\LocalSites\domains\CustomMVC\Core\Controller.php(21): call_user_func_array(Array, Array)
+#9 C:\LocalSites\domains\CustomMVC\Core\Router.php(81): Core\Controller->__call('index', Array)
+#10 C:\LocalSites\domains\CustomMVC\public\index.php(48): Core\Router->dispatch('posts/index')
+#11 {main}
+Throw in 'C:\LocalSites\domains\CustomMVC\vendor\twig\twig\src\Loader\FilesystemLoader.php' on line 250
